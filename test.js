@@ -365,6 +365,171 @@ console.log(i);
 
 // 27. შექმენი ცვლადი secret = 7. while loop-ით „იმუშავე“ სანამ guess != 7.
 
+let secret = 7;
+
+guess = 10;
+
+while() 
+//  27-ეეეე ვერ მიხვდი)))))))))))))))))))))))))))))))))))))))))))))))))))
+
+
 // 28. while loop-ით გამოთვალე ნამრავლი 1–5.
 
+let i = 1;
+
+let result = 1;
+
+while (i<=5) {
+    result = result * i;
+    i++;
+    
+}
+console.log(result);
+
+
+
 // 29. შექმენი counter = 0. while loop-ით გაზარდე 10-მდე და console.log() ყოველი ნაბიჯი.
+
+let counter = 0;
+
+while (counter <= 10){
+    console.log(counter);
+    counter++;
+}
+
+// ================= Level 5: for...of =================
+
+// 30. შექმენი fruits მასივი და for...of-ით დაბეჭდე თითოეული.
+
+let fruits = ["banana", "kiwi", "apple"];
+
+for (let fruit of fruits){
+
+    console.log(fruits);
+}
+
+
+// 31. შექმენი numbers მასივი და for...of-ით დაბეჭდე მათი კვადრატები.
+
+let numbers = [2, 3, 4];
+
+for (let number of numbers ){
+
+    console.log(number * number);
+
+}
+
+
+// 32. შექმენი names მასივი და for...of-ით დაბეჭდე "Hello, name" თითოეულისთვის.
+
+let names = ["Sali", "Salo", "Salome"];
+
+for (let name of names){
+
+    console.log ("Hello", name);
+}
+
+
+// 33. შექმენი colors მასივი და for...of-ით console.log() თითოეული ფერი დიდი ასოებით.
+
+let colors = ["Pink", "Blue", "Brown"];
+
+for (let color of colors){
+
+    console.log(color.toUpperCase());
+}
+
+
+// 34. შექმენი რიცხვების მასივი და for...of-ით იპოვე ჯამი.
+
+let numeros = [1, 2, 3, 4, 5];
+
+let sum = 0;
+
+for ( let numero of numeros){
+    sum += numero;
+
+    console.log(sum);
+}
+
+// ================= Level 6: for...in =================
+
+// 35. შექმენი person ობიექტი (name, age, city). for...in-ით დაბეჭდე ყველა key.
+
+let person = {
+    name: "Ako",
+    age: 31,
+    city: "Tbilisi",
+}
+
+for (let key in person){
+    console.log(key);
+    console.log(person[key]);
+}
+
+
+
+
+// 36. იგივე ობიექტში დაბეჭდე key და value ერთად (მაგ: name: "aniko").
+
+let person = {
+    name: "Ako",
+    age: 31,
+    city: "Tbilisi",
+}
+
+for (let key in person){
+    console.log(key + ":" + person[key]);
+
+}
+
+
+
+// 37. შექმენი car ობიექტი და for...in-ით გამოიტანე ყველა მნიშვნელობა.
+
+let car = {
+
+    model: "Fiat",
+    year: 2017,
+    color: "white",
+}
+
+for (let key in car){
+
+    console.log (car[key]);
+}
+
+// 38. შექმენი scores ობიექტი (student → ქულა). for...in-ით დაბეჭდე სტუდენტი და ქულა.
+
+let score = {
+
+    Alex: 90,
+    Ani: 99,
+    Nini: 100,
+}
+
+for (let key in score) {
+
+console.log(key)
+  console.log(score[key]);
+
+    console.log(key + ":" + score[key]);
+  
+}
+
+
+// 39. შექმენი settings ობიექტი (volume, theme, language). for...in-ით დაბეჭდე ყველა პარამეტრი.
+
+settings = {
+
+    volume: "high",
+    theme: "dark",
+    language: "French"
+}
+
+
+for ( let key in settings ){
+
+    console.log (settings[key]);
+}
+
